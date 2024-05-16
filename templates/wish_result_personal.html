@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="container px-4 py-5" id="term-form-result">
-    <h2 class="pb-2 border-bottom">Пожелание успешно добавлено</h2>
+    <h2 class="pb-2 border-bottom">Пожелание {% if success %} успешно {% else %}не {% endif %} добавлено</h2>
     <p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
-        Ваше пожелание добавлено <span class="fw-bold">{% if success %}успешно{% else %}не успешно{% endif %}</span>.
+        Ваше пожелание добавлено <span class="fw-bold">{% if success %}успешно{% else %}неуспешно{% endif %}</span>.
     </p>
     {% if success %}
     {% else %}
