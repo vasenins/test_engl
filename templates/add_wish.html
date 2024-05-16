@@ -1,0 +1,38 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+{% endblock %}
+
+{% block page-lead %}
+{% endblock %}
+
+
+{% block content %}
+    
+
+    
+<div class="container" id="term-form">
+    <form method="post">
+        <div class="row px-5 py-2">
+            <h3>Заполните поля, чтобы оставить свое пожелание:</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-6">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Иван" value required>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Ваш контактный email:</label>
+                <input type="text" class="form-control input-lg" name="email" id="email" placeholder="ivan@ivanov.com" value required>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for ="wish_for_prj"> Пожелание</label>
+            <textarea type="text" class="form-control input-lg" name="wish_for_prj" id="wish_for_prj" aria aria-describedby="definition_note" rows="3"></textarea>
+        </div>
+        <div class = "row px-5 py-2">
+            <button type="submit" class = "btn btn-primary" formaction="/wish_result_personal">Отправить</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base_page.html" %}
+
+
+{% block content %}
+<div class="container px-4 py-5" id="terms-table">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col" class="py-3">#</th>
+              <th scope="col" class="py-3">Имя</th>
+              <th scope="col" class="py-3">Email</th>
+              <th scope="col" class="py-3">Пожелание</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for cnt, user_name, email, wish in terms %}
+            <tr>
+                <td class="py-3">{{ cnt }}</td>
+                <td class="py-3">{{ user_name}}</td>
+                <td class="py-3">{{ email }}</td>
+                <td class="py-3">{{ wish }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+</div>
+{% endblock %}

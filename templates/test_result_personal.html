@@ -1,0 +1,26 @@
+{% extends "base_page.html" %}
+
+{% block content %}
+<div class="container px-4 py-5" id="term-form-result">
+    <h2 class="pb-2 border-bottom">Тест завершен успешно</h2>
+    <p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
+        Ваш тест завершился <span class="fw-bold">{% if success %}успешно{% else %}ошибкой{% endif %}</span>.
+    </p>
+    {% if success %}<p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
+        Вы набрали <span class="fw-bold"> {{ balls }} баллов из 10 максимально возможных.</span>.
+    </p>
+    {% else %}
+    {% endif %}
+    {% if success %}
+    {% else %}
+         <h2 class="pb-2 border-bottom">Комментарий</h2>
+         <p>{{ comment }}</p>
+    {% endif %}
+
+    <h2 class="pb-2 border-bottom">Что можно сделать?</h2>
+    <ul>
+        <li>пройти <a href="/test">тест</a> ещё раз,</li>
+        <li>вернуться на <a href="/">главную</a></li>
+    </ul>
+</div>
+{% endblock %}

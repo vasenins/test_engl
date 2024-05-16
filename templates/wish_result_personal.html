@@ -1,0 +1,19 @@
+{% extends "base_page.html" %}
+
+{% block content %}
+<div class="container px-4 py-5" id="term-form-result">
+    <h2 class="pb-2 border-bottom">Пожелание успешно добавлено</h2>
+    <p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
+        Ваше пожелание добавлено <span class="fw-bold">{% if success %}успешно{% else %}не успешно{% endif %}</span>.
+    </p>
+    {% if success %}
+    {% else %}
+         <h2 class="pb-2 border-bottom">Комментарий</h2>
+         <p>{{ comment }}</p>
+    {% endif %}
+    <h2 class="pb-2 border-bottom">Что можно сделать?</h2>
+    <ul>
+        <li>вернуться на <a href="/">главную</a></li>
+    </ul>
+</div>
+{% endblock %}

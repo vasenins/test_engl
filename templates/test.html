@@ -1,0 +1,247 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+{% endblock %}
+
+{% block page-lead %}
+{% endblock %}
+
+
+{% block content %}
+    
+
+    
+<div class="container" id="term-form">
+    <form method="post">
+        <div class="row px-5 py-2">
+            <h3>Данные тестируемого</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-6">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Иван" value required>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Ваш контактный email:</label>
+                <input type="text" class="form-control input-lg" name="email" id="email" placeholder="ivan@ivanov.com" value required>
+            </div>
+        </div>
+        <div class="row px-5 py-2">
+            <h3>Выберете правильный вариант ответа:</h3>
+        </div>
+           <div class="row px-5 py-2">
+              <span> 1) What is this? … is my exercise-book.</span>
+           </div>
+           <p>
+           <label>
+             <input class="with-gap" name="group1" type="radio" value="option11"/>
+             <span>it</span>
+           </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group1" type="radio" value="option12"/>
+              <span>these</span>
+            </label>
+          </p>
+          <p>
+            <label>
+               <input class="with-gap" name="group1" type="radio"  value="option13"/>
+               <span>those</span>
+            </label>
+           </p>
+        <div class="row px-5 py-2">
+            <span> 2) There is … pen on the table.</span>
+        </div>
+          <p>
+            <label>
+              <input class="with-gap" name="group2" type="radio" value="option21"/>
+              <span>some</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group2" type="radio" value="option22"/>
+              <span>a</span>
+            </label>
+          </p>
+          <p>
+            <label>
+               <input class="with-gap" name="group2" type="radio"  value="option23"/>
+               <span>such</span>
+            </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 3)  … car is this?</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group3" type="radio" value="option31"/>
+               <span>what</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group3" type="radio" value="option32"/>
+              <span>why</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group3" type="radio"  value="option33"/>
+               <span>whose</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 4)  I’m cold. …open the window.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group4" type="radio" value="option41"/>
+               <span>a not</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group4" type="radio" value="option42"/>
+              <span>don’t</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group4" type="radio"  value="option43"/>
+               <span>no</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 5) He … to the University by tram.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group5" type="radio" value="option51"/>
+               <span>is going</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group5" type="radio" value="option52"/>
+              <span>go</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group5" type="radio"  value="option53"/>
+               <span>goes</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 6) Nick … a book now.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group6" type="radio" value="option61"/>
+               <span>is reading</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group6" type="radio" value="option62"/>
+              <span>are reading</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group6" type="radio"  value="option63"/>
+               <span>had read</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 7) I like potatoes, but I … them everyday.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group7" type="radio" value="option71"/>
+               <span>haven’t eaten</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group7" type="radio" value="option72"/>
+              <span>don’t eat</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group7" type="radio"  value="option73"/>
+               <span>doesn’t eat</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 8) I … to see my friend tomorrow.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group8" type="radio" value="option81"/>
+               <span>am going</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group8" type="radio" value="option82"/>
+              <span>have going</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group8" type="radio"  value="option83"/>
+               <span>were going</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 9) She didn’t … breakfast yesterday.</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group9" type="radio" value="option91"/>
+               <span>had</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group9" type="radio" value="option92"/>
+              <span>have</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group9" type="radio"  value="option93"/>
+               <span>haved</span>
+             </label>
+          </p>
+        <div class="row px-5 py-2">
+            <span> 10) I can swim, but my friend …</span>
+        </div>
+          <p>
+            <label>
+               <input class="with-gap" name="group10" type="radio" value="option101"/>
+               <span>don’t</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="group10" type="radio" value="option102"/>
+              <span>is not</span>
+            </label>
+          </p>
+          <p>
+             <label>
+               <input class="with-gap" name="group10" type="radio"  value="option103"/>
+               <span>can’t</span>
+             </label>
+          </p>
+        <div class = "row px-5 py-2">
+            <button type="submit" class = "btn btn-primary" formaction="/test_result_personal">Отправить</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
