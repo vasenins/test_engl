@@ -2,12 +2,12 @@
 
 {% block content %}
 <div class="container px-4 py-5" id="term-form-result">
-    <h2 class="pb-2 border-bottom">Тест завершен успешно</h2>
+    <h2 class="pb-2 border-bottom">Тест завершен {% if success %} успешно{% else %}ошибкой{% endif %}</h2>
     <p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
         Ваш тест завершился <span class="fw-bold">{% if success %}успешно{% else %}ошибкой{% endif %}</span>.
     </p>
     {% if success %}<p>Уважаемый тестируемый <span class="fst-italic">{{ user }}</span>,<br/>
-        Вы набрали <span class="fw-bold"> {{ balls }} баллов из 10 максимально возможных.</span>.
+        Вы набрали <span class="fw-bold"> {{ balls }} баллов из 10 максимально возможных.</span>
     </p>
     {% else %}
     {% endif %}
